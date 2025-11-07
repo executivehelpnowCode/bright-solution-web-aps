@@ -1,19 +1,31 @@
 import Section from "../components/container";
+import { motion } from "motion/react";
 
 export default function Hero() {
   return (
     <div className="min-h-[100vh] bg-gradient-to-br from-crimson-1400 via-crimson-1200 to-crimson-1000 py-14">
       <div className="text-white flex lg:flex-col justify-center items-center">
-        <span className="px-[10px] py-[5px] text-[12px] text-crimson-1200 bg-white rounded-full my-4">
-          Bright Solutions • Generative AI
-        </span>
-
-        <div className="flex flex-col gap-3 items-center">
-          <h1 className="text-5xl font-extrabold">Generative AI Toolkit</h1>
-          <h2 className="text-xl">
-            Your hub for responsible, scalable, human‑centered AI adoption.
-          </h2>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: -20 }}
+          transition={{ delay: 0.3, ease: "easeOut" }}
+        >
+          <span className="px-[10px] py-[5px] text-[12px] text-crimson-1200 bg-white rounded-full my-4">
+            Bright Solutions • Generative AI
+          </span>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, ease: "easeOut" }}
+        >
+          <div className="flex flex-col gap-3 items-center">
+            <h1 className="text-5xl font-extrabold">Generative AI Toolkit</h1>
+            <h2 className="text-xl">
+              Your hub for responsible, scalable, human‑centered AI adoption.
+            </h2>
+          </div>
+        </motion.div>
         {/* dummy yt video placeholderf */}
         <div className="rounded-2xl w-[1050px] h-[560pX] bg-[#282828] my-6"></div>
         <div className="flex gap-3">
