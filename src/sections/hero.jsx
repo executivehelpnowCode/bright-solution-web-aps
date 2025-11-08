@@ -1,3 +1,4 @@
+import Button from "../components/button";
 import Section from "../components/container";
 import { AnimatePresence, motion } from "motion/react";
 
@@ -7,9 +8,10 @@ export default function Hero() {
       <div className="text-white flex flex-col justify-center items-center">
         <AnimatePresence>
           <motion.div
+            key="hero-header"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, ease: "easeOut" }}
+            transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
             className="flex flex-col items-center"
           >
             <div className="px-[10px] py-[5px] text-[12px] text-crimson-1200 bg-white rounded-full my-4">
@@ -28,25 +30,30 @@ export default function Hero() {
               </div>
             </div>
           </motion.div>
-          {/* dummy yt video placeholderf */}
           <motion.div
+            key="hero-video"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.5, ease: "easeOut" }}
+            transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
           >
-            <video
-              src=""
-              className="rounded-2xl w-[800px] lg:w-[1050px] h-[460pX] lg:h-[550px] bg-[#282828] sm my-6"
-            ></video>
+            <iframe
+              src="https://www.youtube.com/embed/YYjF878CnrM?start=1"
+              className="rounded-2xl w-[800px] lg:w-[976px] h-[450px] lg:h-[550px] bg-[#282828] sm my-6"
+            />
           </motion.div>
           <motion.div
+            key="hero-buttons"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 2, ease: "easeOut" }}
+            transition={{ duration: 0.5, delay: 0.7, ease: "easeOut" }}
             className="flex gap-3"
           >
+            <Button onClick={console.log("clicked")}>
+              {" "}
+              Start with AI Readiness{" "}
+            </Button>
             <button
-              className="bg-crimson-900 font-semibold p-3 rounded-full 
+              className="bg-crimson-900 font-semibold py-3 px-4 rounded-full 
           hover:translate-y-[-1px] hover:transition-all hover:duration-100 hover:bg-crimson-1000"
             >
               Start with AI Readiness
