@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import Hero from "./sections/hero";
 import Filters from "./sections/filters";
