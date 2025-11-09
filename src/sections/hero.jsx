@@ -55,10 +55,10 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.7, ease: "easeOut" }}
             className="flex flex-col sm:flex-row gap-3 pb-10"
           >
-            <Button onClick={() => console.log("clicked")} color="crimson">
+            <Button className="h-12" onClick={() => console.log("clicked")} color="crimson">
               Start with AI Readiness
             </Button>
-            <Button onClick={() => console.log("clicked")} color="white">
+            <Button className="h-12" onClick={() => console.log("clicked")} color="white">
               Jump to Toolkit Overview
             </Button>
           </motion.div>
