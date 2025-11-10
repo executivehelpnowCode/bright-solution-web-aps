@@ -8,7 +8,7 @@ export const options = [
     name: "Option 2",
   },
   {
-    id: "13",
+    id: "3",
     name: "Option 3",
   },
   {

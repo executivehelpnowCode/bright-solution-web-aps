@@ -12,7 +12,13 @@ export default function Button({ children, color, ...props }) {
         font-semibold rounded-full hover:translate-y-[-1px] 
         hover:transition-all hover:duration-100 px-6 shadow-md hover:shadow-md`}
     >
-      <span className="flex items-center justify-center">
+      <span
+        className={`${
+          color === "crimson"
+            ? "text-white"
+            : "bg-white text-crimson-1000 border-0"
+        } flex items-center justify-center`}
+      >
         {children || "Button"}
       </span>
     </button>
