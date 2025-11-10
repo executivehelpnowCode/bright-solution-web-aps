@@ -1,13 +1,14 @@
 import Input from "../components/input";
 import Button from "../components/button";
 import { useEffect, useState } from "react";
+import { options } from "../ constants";
 
 export default function Filters() {
   const [filterForm, setFilterForm] = useState({
     search: "",
-    pillar: "",
-    type: "",
-    level: "",
+    pillars: "",
+    types: "",
+    levels: "",
   });
 
   const handleInputChange = (e) => {
@@ -17,6 +18,14 @@ export default function Filters() {
       [name]: value,
     }));
   };
+
+  // const handleOptionSelect = (value) => {
+  //   const name = e.target.name;
+  //   setFilterForm((prev) => ({
+  //     ...prev,
+  //     [name]: value,
+  //   }));
+  // };
 
   // useEffect(() => {
   //   console.clear();
@@ -35,24 +44,29 @@ export default function Filters() {
           onChange={handleInputChange}
         />
         <Input
+          name="pillars"
           type="combobox"
-          label="Pillar"
+          label="Pillars"
+          options={options}
           placeholder={"All pillars"}
-          value={""}
+          value={filterForm.pillars}
+          onChange={handleInputChange}
         />
         <Input
+          name="types"
           type="combobox"
-          label="Type"
+          label="Types"
           placeholder={"All types"}
-          value={""}
+          value={filterForm.types}
+          onChange={handleInputChange}
         />
         <Input
-          name="level"
+          name="levels"
           type="combobox"
-          label="Level"
+          label="Levels"
           placeholder={"All levels"}
-          value={filterForm.level}
-          onOptionSelect={(option) => console.log(option)}
+          value={filterForm.levels}
+          onChange={handleInputChange}
         />
         <Button
           className="h-11 text-white"

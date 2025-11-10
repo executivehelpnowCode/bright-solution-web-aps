@@ -13,7 +13,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center mt-16"
           >
             <div className="px-3 py-1.5 text-xs sm:text-sm text-crimson-1200 bg-white rounded-full my-4">
               Bright Solutions • Generative AI
