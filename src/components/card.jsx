@@ -9,7 +9,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`bg-white border border-red-950/10 rounded-2xl p-5 shadow-sm mb-8 ${className}`}
+      className={`bg-white border border-red-950/10 rounded-2xl p-5 shadow-sm ${className}`}
     >
       {title && (
         <h3 className={`text-xl font-semibold mb-2 ${titleColor}`}>{title}</h3>
