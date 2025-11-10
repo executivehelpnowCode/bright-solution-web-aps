@@ -53,7 +53,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.7, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row gap-3 pb-10"
+            className="flex flex-col sm:flex-row gap-3"
           >
             <Button
               className="h-12"
