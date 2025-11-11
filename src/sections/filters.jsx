@@ -11,26 +11,19 @@ export default function Filters() {
     levels: "",
   });
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFilterForm((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+  useEffect(() => {
+    console.clear();
+    console.table(filterForm);
+  }, [filterForm]);
+
+  const handleResetFilters = () => {
+    setFilterForm({
+      search: "",
+      pillars: "",
+      types: "",
+      levels: "",
+    });
   };
-
-  // const handleOptionSelect = (value) => {
-  //   const name = e.target.name;
-  //   setFilterForm((prev) => ({
-  //     ...prev,
-  //     [name]: value,
-  //   }));
-  // };
-
-  // useEffect(() => {
-  //   console.clear();
-  //   console.table(filterForm);
-  // }, [filterForm]);
 
   return (
     <div className="flex items-center justify-center bg-gray-100 w-full">
@@ -39,38 +32,71 @@ export default function Filters() {
           name="search"
           type="text"
           label="Search"
-          placeholder={"Search resources..."}
-          value={filterForm.search}
-          onChange={handleInputChange}
+          placeholder={"Search resources"}
+          value={filterForm.search || ""}
+          onInputChange={(value) =>
+            setFilterForm((prev) => ({ ...prev, search: value }))
+          }
+          onInputClear={handleResetFilters}
         />
         <Input
           name="pillars"
           type="combobox"
           label="Pillars"
-          options={options}
           placeholder={"All pillars"}
-          value={filterForm.pillars}
-          onChange={handleInputChange}
+          options={options || []}
+          value={filterForm.pillars || ""}
+          onOptionSelect={(option) =>
+            setFilterForm((prev) => ({
+              ...prev,
+              pillars: option.name, // set the selected option name or id
+            }))
+          }
+          onInputClear={handleResetFilters}
         />
         <Input
           name="types"
           type="combobox"
           label="Types"
+          options={options || []}
           placeholder={"All types"}
-          value={filterForm.types}
-          onChange={handleInputChange}
+          value={filterForm.types || ""}
+          onOptionSelect={(option) =>
+            setFilterForm((prev) => ({
+              ...prev,
+              types: option.name,
+            }))
+          }
+          onInputClear={handleResetFilters}
         />
         <Input
           name="levels"
           type="combobox"
           label="Levels"
+          options={options || []}
           placeholder={"All levels"}
-          value={filterForm.levels}
-          onChange={handleInputChange}
+          value={filterForm.levels || ""}
+          onOptionSelect={(option) =>
+            setFilterForm((prev) => ({
+              ...prev,
+              levels: option.name,
+            }))
+          }
+          onInputClear={handleResetFilters}
         />
         <Button
           className="h-11 text-white"
-          onClick={() => console.log("clicked")}
+          onClick={() => {
+            // reset the filter state
+            setFilterForm((prev) => ({
+              ...prev,
+              pillars: "", // reset this input
+              // reset other filters if needed
+            }));
+
+            // optionally call any other side effect, like refetching data
+            handleResetFilters();
+          }}
           color="crimson"
         >
           Reset
