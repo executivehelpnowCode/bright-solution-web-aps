@@ -10,6 +10,7 @@ export default function Playbook() {
       <Button
         onClick={() => console.log("Open  View on Separate Page")}
         color="crimson"
+        className="p-[10px]"
       >
         View on Separate Page
       </Button>

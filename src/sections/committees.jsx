@@ -15,7 +15,7 @@ export default function Committees() {
         />
       </div>
       <div class="mt-3 flex gap-3">
-        <Button onClick={() => console.log("Download PPTX")} color="crimson">
+        <Button onClick={() => console.log("Download PPTX")} color="crimson" className="p-[10px]">
           Download PPTX
         </Button>
       </div>
