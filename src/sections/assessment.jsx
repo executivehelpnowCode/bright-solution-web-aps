@@ -7,8 +7,8 @@ export default function Assessment() {
       title="AI Readiness & Data Maturity Self-Assessment"
       description="Gauge your current maturity to unlock a tailored Level 1–5 pathway report."
     >
-      <Button onClick={() => console.log("Open Assessment")} color="crimson">
-        Open Assessment
+      <Button onClick={() => console.log("Open Assessment")} color="crimson" className="p-[10px]">
+        Open Assessment 
       </Button>
     </Card>
   );
