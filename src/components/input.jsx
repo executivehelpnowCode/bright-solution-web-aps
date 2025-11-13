@@ -81,7 +81,7 @@ export default function Input({
                 onClick={() => setFocus(true)}
                 className={`${
                   focus ? "-rotate-180 " : ""
-                } translate-y-10 ml-2 transition-all duration-500 cursor-pointer`}
+                } translate-y-10 ml-2 transition-all duration-500 cursor-pointer text-gray-500/50`}
               />
             )}
           </label>

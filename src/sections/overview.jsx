@@ -1,11 +1,8 @@
 import Card from "../components/card";
 
-export default function Overview() {
+export default function Overview({ title, description }) {
   return (
-    <Card
-      title="Innovation Maturity Scale (Visual Overview)"
-      description="Gauge your current maturity to unlock a tailored Level 1–5 pathway report."
-    >
+    <Card title={title} description={description}>
       <div className="aspect-video rounded-xl shadow-lg shadow-dark-500/50 overflow-hidden">
         <img
           src="https://via.placeholder.com/1600x900.png?text=Innovation+Maturity+Scale+Visual"

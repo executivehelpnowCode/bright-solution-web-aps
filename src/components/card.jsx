@@ -11,7 +11,7 @@ export default function Card({
 }) {
   return (
     <div
-      className={`bg-white border border-red-950/10 rounded-2xl p-5 shadow-sm ${className}`}
+      className={`w-full bg-white border border-red-950/10 rounded-2xl p-5 shadow-sm ${className}`}
     >
       {title && (
         <div className="flex items-center gap-2 mb-2">
