@@ -13,8 +13,8 @@ export default function Reports() {
             description={report.description}
             className="hover:translate-y-[-2px] hover:shadow-[0px_13px_15px_5px_rgba(0,_0,_0,_0.1)] transition-all duration-150"
           >
-            <a href="#" class="font-semibold text-red-700 hover:none">
-              {report.link}
+            <a href={report.url} class="font-semibold text-red-700 hover:none">
+              {report.label}
             </a>
           </Card>
         </article>

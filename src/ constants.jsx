@@ -25,27 +25,33 @@ export const leveledReports = [
   {
     title: "Level 1 Report & Pathway",
     description: "Foundation overview & next steps.",
-    link: "Download PDF",
+    label: "Download PDF",
+    url: "#1",
+
   },
   {
     title: "Level 2 Report & Pathway",
     description: "Process alignment & adoption.",
-    link: "Download PDF",
+    label: "Download PDF",
+     url: "#2",
   },
   {
     title: "Level 3 Report & Pathway",
     description: "Data integration & training.",
-    link: "Download PDF",
+    label: "Download PDF",
+     url: "#3",
   },
   {
     title: "Level 4 Report & Pathway",
     description: "Measurement & optimization.",
-    link: "Download PDF",
+    label: "Download PDF",
+     url: "#4",
   },
   {
     title: "Level 5 Report & Pathway",
     description: "Scale & continuous improvement.",
-    link: "Download PDF",
+    label: "Download PDF",
+    url: "#5",
   },
 ];
 
@@ -53,53 +59,55 @@ export const generativeAiToolkit = [
   {
     title: "Where to Begin: White Paper",
     description: "Foundational overview of readiness & ethical guardrails.",
-    link: "Open",
+    label: "Open",
+     url: "#1",
   },
   {
     title: "Beginners’ Safety AI Guide",
     description: "Practical tips for safe, policy‑aligned use of AI tools.",
-    link: "Open",
+    label: "Open",
+    url: "#2",
   },
   {
     title: "Generative AI Policy (Template)",
     description: "Customizable policy template for organizations.",
-    link: "Open",
-    
+    label: "Open",
+    url: "#3",
   },
   {
     title: "Staff Training: AI Guidelines (Deck)",
     description: "Onboard teams to responsible AI.",
-    link: "Open",
-    
+    label: "Open",
+    url: "#4",
   },
   {
     title: "Customizing AI: White Paper",
     description: "Tailor AI to workflows without sacrificing safety.",
-    link: "Open",
-    
+    label: "Open",
+    url: "#5",
   },
   {
     title: "AI Style Guide",
     description: "Tone, voice, and formatting for AI‑assisted writing.",
-    link: "Open",
-    
+    label: "Open",
+    url: "#6",
   },
   {
     title: "AI Prompt Guide",
     description: "Reference for crafting effective prompts.",
-    link: "Open",
-    
+    label: "Open",
+    url: "#7",
   },
   {
     title: "Mini Prompt Workbook (Interactive)",
     description: "Hands‑on exercises to level up prompting.",
-    link: "Open",
-    
+    label: "Open",
+    url: "#8",
   },
   {
     title: "AI Prompt Use Cases",
     description: "Curated examples for senior living.",
-    link: "Open",
-    
+    label: "Open",
+    url: "#9",
   },
 ];
