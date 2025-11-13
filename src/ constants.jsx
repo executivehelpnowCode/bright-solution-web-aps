@@ -111,3 +111,43 @@ export const generativeAiToolkit = [
     url: "#9",
   },
 ];
+
+export const innovationRoadmapStrategicPlanning = [
+  {
+    title: "Roadmap & Strategic Plan Overview",
+    description: "Visual overview of the innovation journey.",
+    label: "Download PDF",
+    url: "#1",
+
+  },
+  {
+    title: "Case Study: Scaling AI Across Sites",
+    description: "How multi‑site deployments took hold.",
+    label: "Read Case Study",
+     url: "#2",
+  },
+  {
+    title: "AI Impact Measurement Toolkit",
+    description: "Executive toolkit for value tracking.",
+    label: "Download PDF",
+     url: "#3",
+  },
+  {
+    title: "AI Governance Refresh Checklist",
+    description: "Keep policies current and actionable.",
+    label: "Download Checklist",
+     url: "#4",
+  },
+  {
+    title: "Future of Generative AI: White Paper",
+    description: "Trends, risks, and opportunities ahead.",
+    label: "Download PDF",
+    url: "#5",
+  },
+  {
+    title: "Innovation Showcase Webinar",
+    description: "Replay & resources.",
+    label: "Watch Replay",
+    url: "#6",
+  },
+];
