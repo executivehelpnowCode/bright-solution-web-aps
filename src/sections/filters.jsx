@@ -1,9 +1,13 @@
 import Input from "../components/input";
 import Button from "../components/button";
 import { useEffect, useState } from "react";
-import { options } from "../ constants";
+import { pillars, options } from "../ constants";
 
-export default function Filters() {
+export default function Filters({
+  onInputChange = () => {},
+  onComboboxSelect = () => {},
+  onFiltersClear = () => {},
+}) {
   const [filterForm, setFilterForm] = useState({
     search: "",
     pillars: "",
@@ -13,10 +17,10 @@ export default function Filters() {
 
   useEffect(() => {
     console.clear();
-    console.table(filterForm);
   }, [filterForm]);
 
   const handleResetFilters = () => {
+    onFiltersClear();
     setFilterForm({
       search: "",
       pillars: "",
@@ -25,18 +29,24 @@ export default function Filters() {
     });
   };
 
+  const pillarOptions = pillars.map((pillar) => ({
+    id: pillar?.id,
+    name: pillar?.title,
+  }));
+
   return (
     <div className="flex items-center justify-center bg-gray-100 w-full">
-      <div className="lg:w-8/12 w-full px-6 flex py-12 mt-6 gap-x-3 gap-y-10 lg:flex-row flex-col">
+      <div className="lg:w-9/12 w-full px-6 flex py-12 mt-6 gap-x-3 gap-y-10 lg:flex-row flex-col">
         <Input
           name="search"
           type="text"
           label="Search"
           placeholder={"Search resources"}
           value={filterForm.search || ""}
-          onInputChange={(value) =>
-            setFilterForm((prev) => ({ ...prev, search: value }))
-          }
+          onInputChange={(value) => {
+            setFilterForm((prev) => ({ ...prev, search: value }));
+            onInputChange(value);
+          }}
           onInputClear={handleResetFilters}
         />
         <Input
@@ -44,14 +54,15 @@ export default function Filters() {
           type="combobox"
           label="Pillars"
           placeholder={"All pillars"}
-          options={options || []}
+          options={pillarOptions || []}
           value={filterForm.pillars || ""}
-          onOptionSelect={(option) =>
+          onOptionSelect={(option) => {
+            onComboboxSelect(option.name);
             setFilterForm((prev) => ({
               ...prev,
               pillars: option.name, // set the selected option name or id
-            }))
-          }
+            }));
+          }}
           onInputClear={handleResetFilters}
         />
         <Input
@@ -87,14 +98,6 @@ export default function Filters() {
         <Button
           className="h-11 text-white"
           onClick={() => {
-            // reset the filter state
-            setFilterForm((prev) => ({
-              ...prev,
-              pillars: "", // reset this input
-              // reset other filters if needed
-            }));
-
-            // optionally call any other side effect, like refetching data
             handleResetFilters();
           }}
           color="crimson"
