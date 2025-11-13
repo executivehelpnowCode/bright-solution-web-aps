@@ -1,3 +1,15 @@
+import { 
+  Compass,
+  ShieldCheck,
+  FileText,
+  GraduationCap,
+  Settings,
+  Type,
+  MessageSquare,
+  BookOpenCheck,
+  BrainCircuit,
+} from "lucide-react";
+
 export const options = [
   {
     id: "1",
@@ -61,54 +73,64 @@ export const generativeAiToolkit = [
     description: "Foundational overview of readiness & ethical guardrails.",
     label: "Open",
      url: "#1",
+    icon: Compass,
   },
   {
     title: "Beginners’ Safety AI Guide",
     description: "Practical tips for safe, policy‑aligned use of AI tools.",
     label: "Open",
     url: "#2",
+     icon: ShieldCheck,
   },
   {
     title: "Generative AI Policy (Template)",
     description: "Customizable policy template for organizations.",
     label: "Open",
     url: "#3",
+    icon: FileText,
   },
   {
     title: "Staff Training: AI Guidelines (Deck)",
     description: "Onboard teams to responsible AI.",
     label: "Open",
     url: "#4",
+    icon: GraduationCap,
   },
   {
     title: "Customizing AI: White Paper",
     description: "Tailor AI to workflows without sacrificing safety.",
     label: "Open",
     url: "#5",
+    icon: Settings,
   },
   {
     title: "AI Style Guide",
     description: "Tone, voice, and formatting for AI‑assisted writing.",
     label: "Open",
     url: "#6",
+    icon: Type,
   },
   {
     title: "AI Prompt Guide",
     description: "Reference for crafting effective prompts.",
     label: "Open",
     url: "#7",
+    icon: MessageSquare,
+
   },
   {
     title: "Mini Prompt Workbook (Interactive)",
     description: "Hands‑on exercises to level up prompting.",
     label: "Open",
     url: "#8",
+    icon: BookOpenCheck,
   },
   {
     title: "AI Prompt Use Cases",
     description: "Curated examples for senior living.",
     label: "Open",
     url: "#9",
+    icon: BrainCircuit,
   },
 ];
 
