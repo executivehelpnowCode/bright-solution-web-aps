@@ -93,11 +93,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -109,11 +109,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -131,11 +131,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -147,11 +147,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -163,11 +163,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -179,11 +179,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
     ],
@@ -202,11 +202,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -217,11 +217,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -232,11 +232,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
       {
@@ -247,11 +247,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
     ],
@@ -270,11 +270,11 @@ export const pillars = [
         href: "",
         type: "",
         items: [
-          {
-            id: null,
-            title: "",
-            description: "",
-          },
+          // {
+          //   id: null,
+          //   title: "",
+          //   description: "",
+          // },
         ],
       },
     ],

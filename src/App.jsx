@@ -7,6 +7,7 @@ import { pillars } from "./ constants";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Card from "./components/card";
+import { div } from "motion/react-client";
 
 function App() {
   const [inputFilter, setInputFilter] = useState("");
@@ -79,24 +80,32 @@ function App() {
                                     <img
                                       src={subcontent.img}
                                       alt={subcontent.title}
-                                      className="p-6 w-6/12 flex items-center justify-center 
+                                      className="hover:scale-110 hover:transition-all hover:duration-300 p-6 w-6/12 flex items-center justify-center 
                                     rounded-lg"
                                     />
                                   </div>
                                 )}
+
+                                <div className="grid grid-cols-2 gap-4">
+                                  {subcontent.items !== 0 &&
+                                    subcontent?.items?.map((item) => {
+                                      return (
+                                        <Card
+                                          key={item?.id}
+                                          title={item?.title}
+                                          description={item?.description}
+                                          className="flex flex-col justify-between w-full h-full hover:-translate-y-1 hover:shadow-[0px_13px_15px_5px_rgba(0,0,0,0.1)] transition-all duration-200 rounded-xl border border-gray-200 bg-white p-6"
+                                        ></Card>
+                                      );
+                                    })}
+                                </div>
+
                                 <p className="text-sm text-gray-700 mt-3">
                                   {/* {subcontent?.footer} */}
                                 </p>
                               </Card>
                             );
                           })}
-                          {/* <Overview />
-                      <Assessment />
-                      <Reports />
-                      <Committees />
-                      <Playbook />
-                      <Engine />
-                      <Lab /> */}
                         </div>
                       )}
 
