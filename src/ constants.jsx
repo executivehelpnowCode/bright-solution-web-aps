@@ -49,7 +49,7 @@ export const leveledReports = [
   },
   {
     id: 2,
-    title: "Level 2 Report & Pathway",
+    title: "Level 2 Test Report & Pathway",
     description: "Process alignment & adoption.",
     label: "Download PDF",
     url: "#2",
