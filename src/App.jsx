@@ -93,9 +93,16 @@ function App() {
                                         <Card
                                           key={item?.id}
                                           title={item?.title}
-                                          description={item?.description}
+                                          description={item?.description}                                          
                                           className="flex flex-col justify-between w-full h-full hover:-translate-y-1 hover:shadow-[0px_13px_15px_5px_rgba(0,0,0,0.1)] transition-all duration-200 rounded-xl border border-gray-200 bg-white p-6"
-                                        ></Card>
+                                        >
+                                             <a
+                                              href={item.url}
+                                              className="font-semibold text-red-700 hover:underline"
+                                            >
+                                              {item?.label}
+                                            </a>
+                                        </Card>
                                       );
                                     })}
                                 </div>
