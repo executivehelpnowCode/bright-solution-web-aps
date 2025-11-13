@@ -42,14 +42,14 @@ export const options = [
 export const leveledReports = [
   {
     id: 1,
-    title: "Level 1 Report & Pathway 123",
+    title: "Level 1 Report & Pathway",
     description: "Foundation overview & next steps.",
     label: "Download PDF",
     url: "#1",
   },
   {
     id: 2,
-    title: "Level 2 Test Report & Pathway",
+    title: "Level 2 Report & Pathway",
     description: "Process alignment & adoption.",
     label: "Download PDF",
     url: "#2",
