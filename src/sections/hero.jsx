@@ -21,7 +21,7 @@ export default function Hero() {
 
             <div className="flex flex-col gap-3 items-center text-center">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold">
-                Generative AI Toolkit
+                Change to Senior Living Generative AI Toolkit
               </h1>
               <h2 className="text-sm sm:text-base md:text-xl max-w-md sm:max-w-lg md:max-w-2xl">
                 Your hub for responsible, scalable, human‑centered AI adoption.
