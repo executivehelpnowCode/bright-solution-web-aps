@@ -92,6 +92,8 @@ export const pillars = [
         img: visualOverview,
         href: "",
         type: "",
+        label: "View Overview",     // 👈 dynamic button label
+        url: "/overview",           // 👈 link for button
         items: [
           // {
           //   id: null,
@@ -105,7 +107,7 @@ export const pillars = [
         title: "AI Readiness & Data Maturity Self Assessment",
         description:
           "Gauge your current maturity to unlock a tailored Level 1–5 pathway report.",
-        img: selfAssessment,
+        // img: selfAssessment,
         href: "",
         type: "",
         items: [
