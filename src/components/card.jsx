@@ -14,8 +14,8 @@ export default function Card({
       className={`w-full bg-white border border-red-950/10 rounded-2xl p-5 shadow-sm ${className}`}
     >
       {title && (
-        <div className="flex items-center gap-2 mb-2">
-          {icon && <span className="flex-shrink-0">{icon}</span>}
+        <div className="flex gap-2 mb-2 flex-col lg:flex-row lg:items-center">
+          {icon && <span className="flex-shrink-1">{icon}</span>}
           <h3 className={`${titleSize} font-semibold ${titleColor}`}>
             {title}
           </h3>
