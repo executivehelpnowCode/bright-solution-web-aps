@@ -1,7 +1,7 @@
 import Input from "../components/input";
 import Button from "../components/button";
 import { useEffect, useState } from "react";
-import { pillars, options } from "../ constants";
+import { pillars } from "../ constants";
 
 export default function Filters({
   onInputChange = () => {},
@@ -69,7 +69,7 @@ export default function Filters({
           name="types"
           type="combobox"
           label="Types"
-          options={options || []}
+          options={[]}
           placeholder={"All types"}
           value={filterForm.types || ""}
           onOptionSelect={(option) =>
@@ -84,7 +84,7 @@ export default function Filters({
           name="levels"
           type="combobox"
           label="Levels"
-          options={options || []}
+          options={[]}
           placeholder={"All levels"}
           value={filterForm.levels || ""}
           onOptionSelect={(option) =>

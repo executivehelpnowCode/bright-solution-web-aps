@@ -4,7 +4,7 @@ import { innovationRoadmapStrategicPlanning } from "../ constants";
 
 export default function InnovationRoadmapStrategicPlanning() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {innovationRoadmapStrategicPlanning.map((report, index) => (
         <article key={index}>
           <Card
